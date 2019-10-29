@@ -1,0 +1,31 @@
+{
+  "name": "miche-garage",
+  "version": "0.0.1",
+  "description": "Simple Redis Example",
+  "main": "index.js",
+  "scripts": {
+    "add-cars": "node ./basics/add-items.js --credentials='../redis-credentials.json'",
+    "get-cars": "node ./basics/between-range.js --credentials='../redis-credentials.json'",
+    "sorted": "node ./basics/sorted-items.js --credentials='../redis-credentials.json'",
+    "flush": "node ./utils/flush.js --credentials='../redis-credentials.json'",
+    "create-garage": "node ./utils/create-garage.js"
+  },
+  "keywords": [
+    "sql",
+    "redis",
+    "node"
+  ],
+  "author": "Christofer flores",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.1.5",
+    "cli-table": "^0.3.1",
+    "express": "^4.15.2",
+    "redis": "^2.6.5",
+    "rk": "^1.0.0",
+    "yargs": "^6.6.0"
+  },
+  "devDependencies": {
+    "faker": "github:marak/Faker.js"
+  }
+}
